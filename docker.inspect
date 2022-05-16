@@ -1,0 +1,197 @@
+[
+    {
+        "Id": "972f3305b655355a4e649ae0189f625a4c77e80b659fc520fc6b1142fa9cb76a",
+        "Created": "2017-07-27T17:41:52.8049864Z",
+        "Path": "/bin/sh",
+        "Args": [
+            "-c",
+            "asterisk -vvvvvvvvvvc"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 26925,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2017-07-27T17:41:53.694849514Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:f3d19b0a73eb8345c13201d8125e9cdec1988a38b1284eaffafc617a3b7008b7",
+        "ResolvConfPath": "/var/lib/docker/containers/972f3305b655355a4e649ae0189f625a4c77e80b659fc520fc6b1142fa9cb76a/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/972f3305b655355a4e649ae0189f625a4c77e80b659fc520fc6b1142fa9cb76a/hostname",
+        "HostsPath": "/var/lib/docker/containers/972f3305b655355a4e649ae0189f625a4c77e80b659fc520fc6b1142fa9cb76a/hosts",
+        "LogPath": "/var/lib/docker/containers/972f3305b655355a4e649ae0189f625a4c77e80b659fc520fc6b1142fa9cb76a/972f3305b655355a4e649ae0189f625a4c77e80b659fc520fc6b1142fa9cb76a-json.log",
+        "Name": "/hungry_kare",
+        "RestartCount": 0,
+        "Driver": "devicemapper",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "/root/asterisk/CallSpool:/var/spool/asterisk",
+                "/root/asterisk/conf:/etc/asterisk"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "host",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "CapAdd": null,
+            "CapDrop": null,
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DiskQuota": 0,
+            "KernelMemory": 0,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": -1,
+            "OomKillDisable": false,
+            "PidsLimit": 0,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0
+        },
+        "GraphDriver": {
+            "Name": "devicemapper",
+            "Data": {
+                "DeviceId": "276",
+                "DeviceName": "docker-253:0-68279987-87b4c8e8423c4009c4174241a1364a19f16ab3402992244caa28a20b1b96fda6",
+                "DeviceSize": "10737418240"
+            }
+        },
+        "Mounts": [
+            {
+                "Source": "/root/asterisk/conf",
+                "Destination": "/etc/asterisk",
+                "Mode": "",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Source": "/root/asterisk/CallSpool",
+                "Destination": "/var/spool/asterisk",
+                "Mode": "",
+                "RW": true,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "localhost.localdomain",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": true,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "Tty": true,
+            "OpenStdin": true,
+            "StdinOnce": true,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "LD_LIBRARY_PATH=/usr/lib"
+            ],
+            "Cmd": [
+                "/bin/sh",
+                "-c",
+                "asterisk -vvvvvvvvvvc"
+            ],
+            "Image": "f3d19b0a73eb",
+            "Volumes": null,
+            "WorkingDir": "/usr/src/asterisk",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "build-date": "20160906",
+                "license": "GPLv2",
+                "name": "CentOS Base Image",
+                "vendor": "CentOS"
+            }
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "73fa925df66a283fa423f558d82799b8f6a30aaebc63bac9ce5274e2dfd64330",
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "Ports": {},
+            "SandboxKey": "/var/run/docker/netns/default",
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "host": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "NetworkID": "4f253d363258b09b1ddb5f853a82680b9e7de97725252fa282a63913ece95746",
+                    "EndpointID": "5db971c6e8b6f9425a26d6f55c8d68b028774419a18bc3a783d9ea765b56f44d",
+                    "Gateway": "",
+                    "IPAddress": "",
+                    "IPPrefixLen": 0,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "MacAddress": ""
+                }
+            }
+        }
+    }
+]

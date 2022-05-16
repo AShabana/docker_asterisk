@@ -1,0 +1,9 @@
+Channel: SIP/STC/+201006683021
+MaxRetries: 0
+Extension: 100
+Application: Hangup
+Archive: yes
+Callerid: 2979600
+
+StartRetry: 1 1 (1492800763)
+Status: Expired

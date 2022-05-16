@@ -1,0 +1,26 @@
+version: '2'
+services:
+        core:
+                build: .
+                ports:
+                        - 5060:5060
+                        - 5060:5060/udp
+                volumes:
+                        - /var/spool/asterisk:/var/spool/asterisk
+                network_mode: host
+
+        sipcmd:
+                image: ashabana/sipcmd
+                depends_on:
+                    - core
+                working_dir: /usr/src/sipcmd
+                command: ./sipcmd -P sip -u 6001 -c ccs4tiks -w localhost -x "c100;ws100"
+                network_mode: "host"
+        
+        sipbash:
+                image: ashabana/sipcmd
+                working_dir: /usr/src/sipcmd
+                command: bash
+                network_mode: "host"
+                
+                
